@@ -1,0 +1,21 @@
+Source: gcovr
+Section: devel
+Priority: optional
+Maintainer: William Hart <wehart@sandia.gov>
+Build-Depends: debhelper (>= 8.0.0),
+ python-dev (>= 2.7)
+Standards-Version: 3.9.4
+Homepage: http://gcovr.com/
+X-Python-Version: >= 2.7
+
+Package: gcovr
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, python-pkg-resources
+Description: Gcovr provides a utility for managing the use of the GNU gcov
+ utility and generating summarized code coverage results. This command is
+ inspired by the Python coverage.py package, which provides a similar
+ utility in Python. The gcovr command produces either compact
+ human-readable summary reports, machine readable XML reports (in
+ Cobertura format) or simple HTML reports. Thus, gcovr can be viewed
+ as a command-line alternative to the lcov utility, which runs gcov
+ and generates an HTML-formatted report.
